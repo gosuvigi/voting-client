@@ -4,6 +4,6 @@ import Voting from './components/Voting';
 const pair = ['LotR', 'GoT'];
 
 React.render(
-    <Voting pair={pair}/>,
+    <Voting pair={pair} winner='GoT'/>,
     document.getElementById('app')
 );
