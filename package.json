@@ -20,12 +20,13 @@
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.11.0"
   },
-  "scripts": {
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js 'test/**/*.@(js|jsx)'",
-    "test:watch": "npm run test -- --watch"
-  },
   "dependencies": {
     "immutable": "^3.7.5",
     "react": "^0.13.3"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js 'test/**/*.@(js|jsx)'",
+    "test:watch": "npm run test -- --watch",
+    "webpack": "webpack --progress --profile --colors"
   }
 }
