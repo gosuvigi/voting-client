@@ -5,13 +5,13 @@ import App from './components/App';
 import Results from './components/Results';
 
 const routes = <Route handler={App}>
-    <Route path='/results' hanlder={Results}/>
+    <Route path='/results' handler={Results}/>
     <DefaultRoute handler={Voting}/>
 </Route>;
 
-Router.run(routes, (Root) => {
+Router.run(routes, (Handler) => {
     React.render(
-        <Root/>,
+        <Handler/>,
         document.getElementById('app')
     );
 });
